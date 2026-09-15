@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f4f6fb" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Takasukai Interpreter v0.13</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">2026 高須会 방문 통역 보조</div>
+        <h1>Takasukai Interpreter <span>v0.13</span></h1>
+        <p class="subtitle">말한 순서 조립 · 중복 억제 · 한국어→일본어 문법 순서화 · 로컬/AI 하이브리드</p>
+      </div>
+      <button id="gemini-settings-btn" class="settings-btn" type="button">✦ Gemini 설정</button>
+    </header>
+
+    <section class="control-dock">
+      <div class="mode-buttons">
+        <button id="ja-btn" class="mode-btn active">🇯🇵 일본측 발언</button>
+        <button id="ko-btn" class="mode-btn">🇰🇷 한국측 발언</button>
+        <button id="stop-btn" class="stop-btn">■ 중지</button>
+      </div>
+      <div class="status-strip">
+        <span><b>상태</b> <strong id="status">대기 중</strong></span>
+        <span><b>언어</b> <strong id="current-lang">일본어 (ja-JP)</strong></span>
+        <span><b>음성</b> <strong id="support">확인 중...</strong></span>
+        <span><b>DB</b> <strong id="db-status">로딩 중</strong></span>
+        <span class="gemini-state-wrap"><b>AI</b> <strong id="gemini-status">미연결</strong></span>
+      </div>
+      <div class="option-strip">
+        <label><input type="checkbox" id="auto-restart" checked /> 인식 자동 재시작</label>
+        <label><input type="checkbox" id="wake-lock" checked /> 화면 켜짐 유지</label>
+        <label><input type="checkbox" id="gemini-auto" /> Gemini 자동 보강</label>
+        <button id="gemini-analyze-btn" class="mini-btn" type="button">✦ 현재 발화 AI 분석</button>
+      </div>
+    </section>
+
+    <section class="workspace">
+      <div class="pane pane-left">
+        <div class="pane-head">
+          <div>
+            <span class="pane-kicker">INPUT</span>
+            <h2 id="source-pane-title">일본어 입력</h2>
+          </div>
+          <div class="title-actions">
+            <span id="segment-badge" class="segment-badge">0조각</span>
+            <span id="speaker-badge" class="speaker-badge japanese">일본측</span>
+            <button id="force-boundary" class="mini-action" type="button">발화 구분</button>
+          </div>
+        </div>
+
+        <section class="speech-card">
+          <div id="interim" class="interim">말을 시작하면 여기에 표시됩니다.</div>
+          <div id="current-final" class="current-final">아직 확정된 발화가 없습니다.</div>
+          <details class="segment-details">
+            <summary>인식 조각 확인</summary>
+            <div id="segment-list" class="segment-list"><p class="empty-message">확정된 인식 조각이 여기에 순서대로 남습니다.</p></div>
+          </details>
+        </section>
+
+        <section id="translation-section" class="translation-card">
+          <div class="section-title-row">
+            <div>
+              <span class="pane-kicker">KOREAN</span>
+              <h2>한국어 번역</h2>
+            </div>
+            <span id="translation-badge" class="translation-badge">로컬 대기</span>
+          </div>
+          <div id="ai-jp-ko-result" class="ai-primary hidden"></div>
+          <div id="translation-result" class="translation-result">일본측 발화를 인식하면 여기에 한국어 의미가 표시됩니다.</div>
+          <div id="translation-note" class="translation-note">로컬 DB 기반 참고 번역입니다.</div>
+        </section>
+
+        <section id="ko-translation-section" class="translation-card hidden">
+          <div class="section-title-row">
+            <div>
+              <span class="pane-kicker">JAPANESE ASSIST</span>
+              <h2>일본어 보조번역</h2>
+            </div>
+            <span id="ko-translation-badge" class="translation-badge">로컬 + AI</span>
+          </div>
+          <div id="ai-ko-ja-result" class="ai-primary hidden"></div>
+          <div id="local-ko-ja-result" class="translation-result"><p class="empty-message">한국어 발화를 인식하면 로컬 DB가 가까운 문장 또는 조립 힌트를 표시합니다.</p></div>
+          <section id="interpret-section" class="interpret-box hidden">
+            <details class="interpret-details">
+              <summary>🆘 로컬 예상문장 후보 보기</summary>
+              <div id="interpret-result"><p class="empty-message">한국어 발화를 인식하면 예상 통역문을 검색합니다.</p></div>
+            </details>
+          </section>
+        </section>
+      </div>
+
+      <aside class="pane pane-right">
+        <div class="pane-head">
+          <div>
+            <span class="pane-kicker">ASSIST</span>
+            <h2 id="assist-pane-title">이해 보조</h2>
+          </div>
+          <span id="assist-mode-badge" class="assist-mode-badge">JP → KO</span>
+        </div>
+
+        <div id="jp-right-mode">
+          <section id="jp-hint-section" class="assist-card emphasis-card">
+            <h3>빠른 이해 힌트</h3>
+            <div id="meaning-hint" class="meaning-hint">현재 발화에서 전문용어와 문법이 감지되면 표시됩니다.</div>
+          </section>
+
+          <section id="ai-jp-hints" class="assist-card ai-card hidden"></section>
+
+          <section id="jp-analysis-grid" class="assist-stack">
+            <section class="assist-card">
+              <h3>사회복지 · 전문용어</h3>
+              <div id="keyword-result" class="keyword-result"><p class="empty-message">현재 발화에서 감지된 용어가 없습니다.</p></div>
+            </section>
+            <section class="assist-card">
+              <h3>문법 · 표현</h3>
+              <div id="grammar-result" class="grammar-result"><p class="empty-message">현재 발화에서 감지된 표현이 없습니다.</p></div>
+            </section>
+            <section class="assist-card">
+              <h3>일반 핵심어휘</h3>
+              <div id="general-word-result" class="general-word-result"><p class="empty-message">일반 어휘가 감지되면 표시됩니다.</p></div>
+            </section>
+          </section>
+
+          <section id="prediction-section" class="assist-card prediction-box hidden">
+            <div class="section-title-row"><h3>다음 발화 예측</h3><span id="topic-name" class="topic-badge"></span></div>
+            <div id="prediction-result"></div>
+          </section>
+        </div>
+
+        <div id="ko-right-mode" class="hidden">
+          <section id="ko-assist-section" class="ko-assist-box hidden">
+            <div class="section-title-row">
+              <h3>한국어 → 일본어 조립 보조</h3>
+              <span id="ko-assist-badge" class="assist-note">로컬 DB</span>
+            </div>
+            <p class="ko-assist-guide">한국어에서 실제로 말한 순서를 기준으로 긴 표현·개념·문법을 배치합니다. 겹치는 하위 단어는 줄이고, 완성 번역은 보조로 사용합니다.</p>
+            <section class="ko-panel">
+              <h3>① 단어 · 표현</h3>
+              <div id="ko-term-result"><p class="empty-message">한국어 발화를 시작하면 필요한 일본어 표현이 표시됩니다.</p></div>
+            </section>
+            <section class="ko-panel">
+              <h3>② 문법 · 문장 뼈대</h3>
+              <div id="ko-grammar-result"><p class="empty-message">한국어 연결 방식에 맞는 일본어 문법이 표시됩니다.</p></div>
+            </section>
+            <section class="ko-panel assembly-panel">
+              <h3>③ 말한 순서대로 일본어 조립</h3>
+              <div id="ko-assembly-result"><p class="empty-message">원문에서 실제 등장한 순서대로 핵심 표현과 문법을 조립해 보여줍니다.</p></div>
+            </section>
+            <section class="ko-panel natural-panel">
+              <h3>④ 일본어식 표현 · 직역 주의</h3>
+              <div id="ko-natural-result"><p class="empty-message">직역보다 자연스러운 일본어가 필요할 때 표시됩니다.</p></div>
+            </section>
+          </section>
+          <section id="ai-ko-hints" class="assist-card ai-card hidden"></section>
+        </div>
+
+        <section class="assist-card quick-search-card">
+          <div class="section-title-row"><h3>빠른 사전검색</h3><span class="assist-note">로컬</span></div>
+          <div class="search-row">
+            <input id="dictionary-search" type="search" placeholder="예: 지역사회 / 支援 / 검토하다" />
+            <button id="dictionary-search-btn" class="mini-btn" type="button">검색</button>
+          </div>
+          <div id="dictionary-search-result" class="dictionary-search-result"><p class="empty-message">한국어 또는 일본어로 검색할 수 있습니다.</p></div>
+        </section>
+      </aside>
+    </section>
+
+    <section class="history-card">
+      <div class="section-title-row"><h2>최근 발화 기록</h2><button id="clear-history" class="small">기록 비우기</button></div>
+      <div id="recent-history" class="recent-history"><p class="empty-message">이전 발화가 없습니다. 끊어진 문장도 발화 묶음으로 보관됩니다.</p></div>
+    </section>
+
+    <details class="debug-card">
+      <summary>동작 기록 보기</summary>
+      <div class="log-title-row"><span></span><button id="clear-log" class="small">기록 지우기</button></div>
+      <pre id="log"></pre>
+    </details>
+  </main>
+
+  <dialog id="gemini-dialog" class="settings-dialog">
+    <form method="dialog" class="settings-form">
+      <div class="section-title-row">
+        <div><span class="pane-kicker">OPTIONAL AI</span><h2>Gemini 연결 설정</h2></div>
+        <button value="cancel" class="icon-btn" aria-label="닫기">×</button>
+      </div>
+      <p class="settings-help">API 키는 이 파일에 포함되지 않습니다. 본인 기기에서 직접 입력하세요. 기본값은 현재 탭 동안만 보관합니다.</p>
+      <label class="field-label">Gemini API 키
+        <input id="gemini-key" type="password" autocomplete="off" placeholder="Google AI Studio에서 발급한 키" />
+      </label>
+      <label class="field-label">모델
+        <input id="gemini-model" type="text" value="gemini-3.5-flash" />
+      </label>
+      <label class="check-line"><input id="gemini-persist" type="checkbox" /> 이 기기에 API 키 저장(localStorage)</label>
+      <div class="dialog-actions">
+        <button id="gemini-test-btn" type="button" class="secondary-btn">연결 테스트</button>
+        <button id="gemini-save-btn" type="button" class="primary-btn">저장</button>
+      </div>
+      <div id="gemini-test-result" class="test-result"></div>
+      <p class="security-note">공개 배포·공용 기기에서는 키를 저장하지 않는 것을 권장합니다. 실제 이용자 실명·민감한 사례는 무료 API로 보내지 않는 편이 안전합니다. 더 강한 보안이 필요하면 추후 서버 프록시 방식으로 전환할 수 있습니다.</p>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
