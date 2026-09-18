@@ -9288,6 +9288,4136 @@
       "pos": "동사",
       "category": "일상",
       "priority": 76
+    },
+    {
+      "ko": [
+        "이사"
+      ],
+      "ja": "理事",
+      "reading": "",
+      "meaning": "이사",
+      "pos": "어휘",
+      "category": "법인·운영",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "감사"
+      ],
+      "ja": "監事",
+      "reading": "",
+      "meaning": "감사",
+      "pos": "어휘",
+      "category": "법인·운영",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "평의원"
+      ],
+      "ja": "評議員",
+      "reading": "",
+      "meaning": "평의원",
+      "pos": "어휘",
+      "category": "법인·운영",
+      "note": "일본 사회복지법인의 공식 구성",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "사업소"
+      ],
+      "ja": "事業所",
+      "reading": "",
+      "meaning": "사업소",
+      "pos": "어휘",
+      "category": "법인·운영",
+      "note": "장애복지서비스 단위 표현",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "지정"
+      ],
+      "ja": "指定",
+      "reading": "",
+      "meaning": "지정",
+      "pos": "어휘",
+      "category": "법인·운영",
+      "note": "지정사업자/서비스",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "이용계약"
+      ],
+      "ja": "利用契約",
+      "reading": "",
+      "meaning": "이용계약",
+      "pos": "어휘",
+      "category": "법인·운영",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "이용료"
+      ],
+      "ja": "利用料",
+      "reading": "",
+      "meaning": "이용료",
+      "pos": "어휘",
+      "category": "법인·운영",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "수급자증"
+      ],
+      "ja": "受給者証",
+      "reading": "",
+      "meaning": "수급자증",
+      "pos": "어휘",
+      "category": "법인·운영",
+      "note": "일본 장애복지서비스 이용 절차",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "급여",
+        "서비스 지급결정"
+      ],
+      "ja": "支給決定",
+      "reading": "",
+      "meaning": "급여·서비스 지급결정",
+      "pos": "어휘",
+      "category": "법인·운영",
+      "note": "지자체 결정",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "장애복지서비스 보수"
+      ],
+      "ja": "障害福祉サービス報酬",
+      "reading": "",
+      "meaning": "장애복지서비스 보수",
+      "pos": "표현",
+      "category": "법인·운영",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "배치기준"
+      ],
+      "ja": "配置基準",
+      "reading": "",
+      "meaning": "배치기준",
+      "pos": "어휘",
+      "category": "법인·운영",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "상근"
+      ],
+      "ja": "常勤",
+      "reading": "",
+      "meaning": "상근",
+      "pos": "어휘",
+      "category": "법인·운영",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "비상근"
+      ],
+      "ja": "非常勤",
+      "reading": "",
+      "meaning": "비상근",
+      "pos": "어휘",
+      "category": "법인·운영",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "전담"
+      ],
+      "ja": "専従",
+      "reading": "",
+      "meaning": "전담",
+      "pos": "어휘",
+      "category": "법인·운영",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "겸무"
+      ],
+      "ja": "兼務",
+      "reading": "",
+      "meaning": "겸무",
+      "pos": "어휘",
+      "category": "법인·운영",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "직원연수"
+      ],
+      "ja": "職員研修",
+      "reading": "",
+      "meaning": "직원연수",
+      "pos": "어휘",
+      "category": "법인·운영",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "이직",
+        "퇴직"
+      ],
+      "ja": "離職",
+      "reading": "",
+      "meaning": "이직·퇴직",
+      "pos": "어휘",
+      "category": "법인·운영",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "합리적 배려"
+      ],
+      "ja": "合理的配慮",
+      "reading": "",
+      "meaning": "합리적 배려",
+      "pos": "어휘",
+      "category": "권리·안전",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "개인정보"
+      ],
+      "ja": "個人情報",
+      "reading": "",
+      "meaning": "개인정보",
+      "pos": "어휘",
+      "category": "권리·안전",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "고충",
+        "불만 해결"
+      ],
+      "ja": "苦情解決",
+      "reading": "",
+      "meaning": "고충·불만 해결",
+      "pos": "어휘",
+      "category": "권리·안전",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "사고보고"
+      ],
+      "ja": "事故報告",
+      "reading": "",
+      "meaning": "사고보고",
+      "pos": "어휘",
+      "category": "권리·안전",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "아차사고",
+        "근접사고"
+      ],
+      "ja": "ヒヤリハット",
+      "reading": "",
+      "meaning": "아차사고·근접사고",
+      "pos": "어휘",
+      "category": "권리·안전",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "감염병 대책"
+      ],
+      "ja": "感染症対策",
+      "reading": "",
+      "meaning": "감염병 대책",
+      "pos": "어휘",
+      "category": "권리·안전",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "재난 대응"
+      ],
+      "ja": "災害対応",
+      "reading": "",
+      "meaning": "재난 대응",
+      "pos": "어휘",
+      "category": "권리·안전",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "사업연속성계획(BCP)"
+      ],
+      "ja": "事業継続計画（BCP）",
+      "reading": "",
+      "meaning": "사업연속성계획(BCP)",
+      "pos": "표현",
+      "category": "권리·안전",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "운영규정"
+      ],
+      "ja": "運営規程",
+      "reading": "",
+      "meaning": "운영규정",
+      "pos": "어휘",
+      "category": "기록·회의",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "중요사항설명서"
+      ],
+      "ja": "重要事項説明書",
+      "reading": "",
+      "meaning": "중요사항설명서",
+      "pos": "어휘",
+      "category": "기록·회의",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "지원기록"
+      ],
+      "ja": "支援記録",
+      "reading": "",
+      "meaning": "지원기록",
+      "pos": "어휘",
+      "category": "기록·회의",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "서비스 제공기록"
+      ],
+      "ja": "サービス提供記録",
+      "reading": "",
+      "meaning": "서비스 제공기록",
+      "pos": "어휘",
+      "category": "기록·회의",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "인계",
+        "전달사항"
+      ],
+      "ja": "申し送り",
+      "reading": "",
+      "meaning": "인계·전달사항",
+      "pos": "어휘",
+      "category": "기록·회의",
+      "note": "교대 근무 인계",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "사례회의"
+      ],
+      "ja": "ケース会議",
+      "reading": "",
+      "meaning": "사례회의",
+      "pos": "어휘",
+      "category": "기록·회의",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "직원회의"
+      ],
+      "ja": "職員会議",
+      "reading": "",
+      "meaning": "직원회의",
+      "pos": "어휘",
+      "category": "기록·회의",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "연계",
+        "협력"
+      ],
+      "ja": "連携",
+      "reading": "",
+      "meaning": "연계·협력",
+      "pos": "어휘",
+      "category": "기록·회의",
+      "note": "복지 현장 고빈도",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "거택개호"
+      ],
+      "ja": "居宅介護",
+      "reading": "",
+      "meaning": "거택개호",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "중증방문개호"
+      ],
+      "ja": "重度訪問介護",
+      "reading": "",
+      "meaning": "중증방문개호",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "동행원호"
+      ],
+      "ja": "同行援護",
+      "reading": "",
+      "meaning": "동행원호",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "행동원호"
+      ],
+      "ja": "行動援護",
+      "reading": "",
+      "meaning": "행동원호",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "요양개호"
+      ],
+      "ja": "療養介護",
+      "reading": "",
+      "meaning": "요양개호",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "중증장애인 등 포괄지원"
+      ],
+      "ja": "重度障害者等包括支援",
+      "reading": "",
+      "meaning": "중증장애인 등 포괄지원",
+      "pos": "표현",
+      "category": "서비스",
+      "note": "",
+      "priority": 76,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "시설입소지원"
+      ],
+      "ja": "施設入所支援",
+      "reading": "",
+      "meaning": "시설입소지원",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "자립훈련"
+      ],
+      "ja": "自立訓練",
+      "reading": "",
+      "meaning": "자립훈련",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "기능훈련·생활훈련 포함",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "취로계속지원 A형"
+      ],
+      "ja": "就労継続支援A型",
+      "reading": "",
+      "meaning": "취로계속지원 A형",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "고용계약 있음",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "취로계속지원 B형"
+      ],
+      "ja": "就労継続支援B型",
+      "reading": "",
+      "meaning": "취로계속지원 B형",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "고스카이 주요 서비스",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "취로정착지원"
+      ],
+      "ja": "就労定着支援",
+      "reading": "",
+      "meaning": "취로정착지원",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "취로선택지원"
+      ],
+      "ja": "就労選択支援",
+      "reading": "",
+      "meaning": "취로선택지원",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "2025년 10월 시작된 서비스",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "자립생활원조"
+      ],
+      "ja": "自立生活援助",
+      "reading": "",
+      "meaning": "자립생활원조",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "일반상담지원"
+      ],
+      "ja": "一般相談支援",
+      "reading": "",
+      "meaning": "일반상담지원",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "특정상담지원"
+      ],
+      "ja": "特定相談支援",
+      "reading": "",
+      "meaning": "특정상담지원",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "지역상담지원"
+      ],
+      "ja": "地域相談支援",
+      "reading": "",
+      "meaning": "지역상담지원",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "지역이행지원"
+      ],
+      "ja": "地域移行支援",
+      "reading": "",
+      "meaning": "지역이행지원",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "지역정착지원"
+      ],
+      "ja": "地域定着支援",
+      "reading": "",
+      "meaning": "지역정착지원",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "방과후 등 데이서비스"
+      ],
+      "ja": "放課後等デイサービス",
+      "reading": "",
+      "meaning": "방과후 등 데이서비스",
+      "pos": "표현",
+      "category": "서비스",
+      "note": "고스카이 운영",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "보육소 등 방문지원"
+      ],
+      "ja": "保育所等訪問支援",
+      "reading": "",
+      "meaning": "보육소 등 방문지원",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "장애아동 상담지원"
+      ],
+      "ja": "障害児相談支援",
+      "reading": "",
+      "meaning": "장애아동 상담지원",
+      "pos": "어휘",
+      "category": "서비스",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "서비스 등 이용계획"
+      ],
+      "ja": "サービス等利用計画",
+      "reading": "",
+      "meaning": "서비스 등 이용계획",
+      "pos": "표현",
+      "category": "계획·전문직",
+      "note": "상담지원 측 계획",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "사정",
+        "평가"
+      ],
+      "ja": "アセスメント",
+      "reading": "",
+      "meaning": "사정·평가",
+      "pos": "어휘",
+      "category": "계획·전문직",
+      "note": "초기 욕구·상태 파악",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "서비스 담당자회의"
+      ],
+      "ja": "サービス担当者会議",
+      "reading": "",
+      "meaning": "서비스 담당자회의",
+      "pos": "표현",
+      "category": "계획·전문직",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "지원방침"
+      ],
+      "ja": "支援方針",
+      "reading": "",
+      "meaning": "지원방침",
+      "pos": "어휘",
+      "category": "계획·전문직",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "지원절차"
+      ],
+      "ja": "支援手順",
+      "reading": "",
+      "meaning": "지원절차",
+      "pos": "어휘",
+      "category": "계획·전문직",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "재검토",
+        "수정"
+      ],
+      "ja": "見直し",
+      "reading": "",
+      "meaning": "재검토·수정",
+      "pos": "어휘",
+      "category": "계획·전문직",
+      "note": "計画を見直す",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "되돌아보기",
+        "회고"
+      ],
+      "ja": "振り返り",
+      "reading": "",
+      "meaning": "되돌아보기·회고",
+      "pos": "어휘",
+      "category": "계획·전문직",
+      "note": "일상적이고 부드러운 평가",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "인수인계"
+      ],
+      "ja": "引き継ぎ",
+      "reading": "",
+      "meaning": "인수인계",
+      "pos": "어휘",
+      "category": "계획·전문직",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "본인의 희망"
+      ],
+      "ja": "本人の希望",
+      "reading": "",
+      "meaning": "본인의 희망",
+      "pos": "어휘",
+      "category": "당사자중심",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "본인의 의사"
+      ],
+      "ja": "本人の意思",
+      "reading": "",
+      "meaning": "본인의 의사",
+      "pos": "어휘",
+      "category": "당사자중심",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "욕구",
+        "니즈"
+      ],
+      "ja": "ニーズ",
+      "reading": "",
+      "meaning": "욕구·니즈",
+      "pos": "어휘",
+      "category": "당사자중심",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "의향"
+      ],
+      "ja": "意向",
+      "reading": "",
+      "meaning": "의향",
+      "pos": "어휘",
+      "category": "당사자중심",
+      "note": "희망보다 공식적",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "의사표명"
+      ],
+      "ja": "意思表明",
+      "reading": "",
+      "meaning": "의사표명",
+      "pos": "어휘",
+      "category": "당사자중심",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "의사확인"
+      ],
+      "ja": "意思確認",
+      "reading": "",
+      "meaning": "의사확인",
+      "pos": "어휘",
+      "category": "당사자중심",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "선호"
+      ],
+      "ja": "選好",
+      "reading": "",
+      "meaning": "선호",
+      "pos": "어휘",
+      "category": "당사자중심",
+      "note": "가이드라인 등에서 사용",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "대변"
+      ],
+      "ja": "代弁",
+      "reading": "",
+      "meaning": "대변",
+      "pos": "어휘",
+      "category": "당사자중심",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "정보제공"
+      ],
+      "ja": "情報提供",
+      "reading": "",
+      "meaning": "정보제공",
+      "pos": "어휘",
+      "category": "당사자중심",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "반영하다"
+      ],
+      "ja": "反映する",
+      "reading": "",
+      "meaning": "반영하다",
+      "pos": "어휘",
+      "category": "당사자중심",
+      "note": "希望を計画に反映する",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "자폐스펙트럼증"
+      ],
+      "ja": "自閉スペクトラム症",
+      "reading": "",
+      "meaning": "자폐스펙트럼증",
+      "pos": "표현",
+      "category": "장애·특성",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "중증장애"
+      ],
+      "ja": "重度障害",
+      "reading": "",
+      "meaning": "중증장애",
+      "pos": "어휘",
+      "category": "장애·특성",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "중증심신장애"
+      ],
+      "ja": "重症心身障害",
+      "reading": "",
+      "meaning": "중증심신장애",
+      "pos": "어휘",
+      "category": "장애·특성",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "감각둔마"
+      ],
+      "ja": "感覚鈍麻",
+      "reading": "",
+      "meaning": "감각둔마",
+      "pos": "어휘",
+      "category": "장애·특성",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "고집",
+        "특정한 집착",
+        "선호"
+      ],
+      "ja": "こだわり",
+      "reading": "",
+      "meaning": "고집·특정한 집착/선호",
+      "pos": "어휘",
+      "category": "장애·특성",
+      "note": "문맥에 따라 부정적 뉘앙스 주의",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "앞으로의 예측",
+        "전망"
+      ],
+      "ja": "見通し",
+      "reading": "",
+      "meaning": "앞으로의 예측·전망",
+      "pos": "어휘",
+      "category": "장애·특성",
+      "note": "見通しを持てるようにする",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "불안"
+      ],
+      "ja": "不安",
+      "reading": "",
+      "meaning": "불안",
+      "pos": "어휘",
+      "category": "장애·특성",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "패닉"
+      ],
+      "ja": "パニック",
+      "reading": "",
+      "meaning": "패닉",
+      "pos": "어휘",
+      "category": "장애·특성",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "자해"
+      ],
+      "ja": "自傷",
+      "reading": "",
+      "meaning": "자해",
+      "pos": "어휘",
+      "category": "장애·특성",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "타해"
+      ],
+      "ja": "他害",
+      "reading": "",
+      "meaning": "타해",
+      "pos": "어휘",
+      "category": "장애·특성",
+      "note": "전문 맥락에서 사용",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "행동의 배경"
+      ],
+      "ja": "行動の背景",
+      "reading": "",
+      "meaning": "행동의 배경",
+      "pos": "어휘",
+      "category": "장애·특성",
+      "note": "행동만 보지 않고 배경을 본다는 표현",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "시각지원"
+      ],
+      "ja": "視覚支援",
+      "reading": "",
+      "meaning": "시각지원",
+      "pos": "어휘",
+      "category": "장애·특성",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "사전예고"
+      ],
+      "ja": "予告",
+      "reading": "",
+      "meaning": "사전예고",
+      "pos": "어휘",
+      "category": "장애·특성",
+      "note": "변화 전 미리 알림",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "의사소통 지원"
+      ],
+      "ja": "コミュニケーション支援",
+      "reading": "",
+      "meaning": "의사소통 지원",
+      "pos": "표현",
+      "category": "장애·특성",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "취로지원원"
+      ],
+      "ja": "就労支援員",
+      "reading": "",
+      "meaning": "취로지원원",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "식사보조",
+        "식사개호"
+      ],
+      "ja": "食事介助",
+      "reading": "",
+      "meaning": "식사보조·식사개호",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "배설보조"
+      ],
+      "ja": "排泄介助",
+      "reading": "",
+      "meaning": "배설보조",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "목욕보조"
+      ],
+      "ja": "入浴介助",
+      "reading": "",
+      "meaning": "목욕보조",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "이동지원"
+      ],
+      "ja": "移動支援",
+      "reading": "",
+      "meaning": "이동지원",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "서비스명으로도 사용",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "복약지원"
+      ],
+      "ja": "服薬支援",
+      "reading": "",
+      "meaning": "복약지원",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "건강관리"
+      ],
+      "ja": "健康管理",
+      "reading": "",
+      "meaning": "건강관리",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "송영",
+        "차량운행"
+      ],
+      "ja": "送迎",
+      "reading": "",
+      "meaning": "송영·차량운행",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "등하원/통소 픽업",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "창작활동"
+      ],
+      "ja": "創作活動",
+      "reading": "",
+      "meaning": "창작활동",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "생활리듬"
+      ],
+      "ja": "生活リズム",
+      "reading": "",
+      "meaning": "생활리듬",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "일과"
+      ],
+      "ja": "日課",
+      "reading": "",
+      "meaning": "일과",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "성공경험"
+      ],
+      "ja": "成功体験",
+      "reading": "",
+      "meaning": "성공경험",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "잘하는 것"
+      ],
+      "ja": "得意なこと",
+      "reading": "",
+      "meaning": "잘하는 것",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "어려워하는 것"
+      ],
+      "ja": "苦手なこと",
+      "reading": "",
+      "meaning": "어려워하는 것",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "부드러운 표현",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "자립지원"
+      ],
+      "ja": "自立支援",
+      "reading": "",
+      "meaning": "자립지원",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "외출"
+      ],
+      "ja": "外出",
+      "reading": "",
+      "meaning": "외출",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "대중교통"
+      ],
+      "ja": "公共交通機関",
+      "reading": "",
+      "meaning": "대중교통",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "쇼핑",
+        "장보기"
+      ],
+      "ja": "買い物",
+      "reading": "",
+      "meaning": "쇼핑·장보기",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "금전관리"
+      ],
+      "ja": "金銭管理",
+      "reading": "",
+      "meaning": "금전관리",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "조리"
+      ],
+      "ja": "調理",
+      "reading": "",
+      "meaning": "조리",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "청소"
+      ],
+      "ja": "掃除",
+      "reading": "",
+      "meaning": "청소",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "세탁"
+      ],
+      "ja": "洗濯",
+      "reading": "",
+      "meaning": "세탁",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "생활기술"
+      ],
+      "ja": "生活技能",
+      "reading": "",
+      "meaning": "생활기술",
+      "pos": "어휘",
+      "category": "일상지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "복지적 취로"
+      ],
+      "ja": "福祉的就労",
+      "reading": "",
+      "meaning": "복지적 취로",
+      "pos": "어휘",
+      "category": "취로지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "고용계약"
+      ],
+      "ja": "雇用契約",
+      "reading": "",
+      "meaning": "고용계약",
+      "pos": "어휘",
+      "category": "취로지원",
+      "note": "A형과 B형 차이 설명에 중요",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "임금"
+      ],
+      "ja": "賃金",
+      "reading": "",
+      "meaning": "임금",
+      "pos": "어휘",
+      "category": "취로지원",
+      "note": "고용관계 임금",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "작업공정"
+      ],
+      "ja": "作業工程",
+      "reading": "",
+      "meaning": "작업공정",
+      "pos": "어휘",
+      "category": "취로지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "작업분담"
+      ],
+      "ja": "作業分担",
+      "reading": "",
+      "meaning": "작업분담",
+      "pos": "어휘",
+      "category": "취로지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "직장실습"
+      ],
+      "ja": "職場実習",
+      "reading": "",
+      "meaning": "직장실습",
+      "pos": "어휘",
+      "category": "취로지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "정착지원"
+      ],
+      "ja": "定着支援",
+      "reading": "",
+      "meaning": "정착지원",
+      "pos": "어휘",
+      "category": "취로지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "적성"
+      ],
+      "ja": "適性",
+      "reading": "",
+      "meaning": "적성",
+      "pos": "어휘",
+      "category": "취로지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "취업능력"
+      ],
+      "ja": "就労能力",
+      "reading": "",
+      "meaning": "취업능력",
+      "pos": "어휘",
+      "category": "취로지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "취로 어세스먼트"
+      ],
+      "ja": "就労アセスメント",
+      "reading": "",
+      "meaning": "취로 어세스먼트",
+      "pos": "어휘",
+      "category": "취로지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "일하는 방식"
+      ],
+      "ja": "働き方",
+      "reading": "",
+      "meaning": "일하는 방식",
+      "pos": "어휘",
+      "category": "취로지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "수주작업"
+      ],
+      "ja": "受注作業",
+      "reading": "",
+      "meaning": "수주작업",
+      "pos": "어휘",
+      "category": "취로지원",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "시설외 취로"
+      ],
+      "ja": "施設外就労",
+      "reading": "",
+      "meaning": "시설외 취로",
+      "pos": "어휘",
+      "category": "취로지원",
+      "note": "",
+      "priority": 76,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "재택취로"
+      ],
+      "ja": "在宅就労",
+      "reading": "",
+      "meaning": "재택취로",
+      "pos": "어휘",
+      "category": "취로지원",
+      "note": "",
+      "priority": 76,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "가족분"
+      ],
+      "ja": "ご家族",
+      "reading": "",
+      "meaning": "가족분",
+      "pos": "어휘",
+      "category": "가족·지역",
+      "note": "정중하고 자연스러움",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "부모 사후"
+      ],
+      "ja": "親亡き後",
+      "reading": "",
+      "meaning": "부모 사후",
+      "pos": "어휘",
+      "category": "가족·지역",
+      "note": "복지 현장에서 정착된 표현",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "지역연계"
+      ],
+      "ja": "地域連携",
+      "reading": "",
+      "meaning": "지역연계",
+      "pos": "어휘",
+      "category": "가족·지역",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "행정",
+        "행정기관"
+      ],
+      "ja": "行政",
+      "reading": "",
+      "meaning": "행정·행정기관",
+      "pos": "어휘",
+      "category": "가족·지역",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "시청"
+      ],
+      "ja": "市役所",
+      "reading": "",
+      "meaning": "시청",
+      "pos": "어휘",
+      "category": "가족·지역",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "구청"
+      ],
+      "ja": "区役所",
+      "reading": "",
+      "meaning": "구청",
+      "pos": "어휘",
+      "category": "가족·지역",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "학교"
+      ],
+      "ja": "学校",
+      "reading": "",
+      "meaning": "학교",
+      "pos": "어휘",
+      "category": "가족·지역",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "기업"
+      ],
+      "ja": "企業",
+      "reading": "",
+      "meaning": "기업",
+      "pos": "어휘",
+      "category": "가족·지역",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "자원봉사자"
+      ],
+      "ja": "ボランティア",
+      "reading": "",
+      "meaning": "자원봉사자",
+      "pos": "어휘",
+      "category": "가족·지역",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "지역교류"
+      ],
+      "ja": "地域交流",
+      "reading": "",
+      "meaning": "지역교류",
+      "pos": "어휘",
+      "category": "가족·지역",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "지역연계추진회의"
+      ],
+      "ja": "地域連携推進会議",
+      "reading": "",
+      "meaning": "지역연계추진회의",
+      "pos": "어휘",
+      "category": "가족·지역",
+      "note": "그룹홈 관련 현장 용어",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "견학"
+      ],
+      "ja": "見学",
+      "reading": "",
+      "meaning": "견학",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "시찰",
+        "공식 견학"
+      ],
+      "ja": "視察",
+      "reading": "",
+      "meaning": "시찰·공식 견학",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "見学보다 공식적",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "방문단"
+      ],
+      "ja": "訪問団",
+      "reading": "",
+      "meaning": "방문단",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "의견교환"
+      ],
+      "ja": "意見交換",
+      "reading": "",
+      "meaning": "의견교환",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "공동사업"
+      ],
+      "ja": "共同事業",
+      "reading": "",
+      "meaning": "공동사업",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "연수교류"
+      ],
+      "ja": "研修交流",
+      "reading": "",
+      "meaning": "연수교류",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "프로그램 교류"
+      ],
+      "ja": "プログラム交流",
+      "reading": "",
+      "meaning": "프로그램 교류",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "지속적인 교류"
+      ],
+      "ja": "継続的な交流",
+      "reading": "",
+      "meaning": "지속적인 교류",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "향후 전망"
+      ],
+      "ja": "今後の展望",
+      "reading": "",
+      "meaning": "향후 전망",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "각서",
+        "MOU 성격의 문서"
+      ],
+      "ja": "覚書",
+      "reading": "",
+      "meaning": "각서·MOU 성격의 문서",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "체결"
+      ],
+      "ja": "締結",
+      "reading": "",
+      "meaning": "체결",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "協定を締結する",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "협의"
+      ],
+      "ja": "協議",
+      "reading": "",
+      "meaning": "협의",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "창구",
+        "담당 연락처"
+      ],
+      "ja": "窓口",
+      "reading": "",
+      "meaning": "창구·담당 연락처",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "수용",
+        "방문",
+        "연수 받아들임"
+      ],
+      "ja": "受け入れ",
+      "reading": "",
+      "meaning": "수용·방문/연수 받아들임",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "파견"
+      ],
+      "ja": "派遣",
+      "reading": "",
+      "meaning": "파견",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "관계를 쌓다"
+      ],
+      "ja": "関係を築く",
+      "reading": "",
+      "meaning": "관계를 쌓다",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "교류를 심화하다"
+      ],
+      "ja": "交流を深める",
+      "reading": "",
+      "meaning": "교류를 심화하다",
+      "pos": "어휘",
+      "category": "교류·MOU",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "처음 뵙겠습니다"
+      ],
+      "ja": "初めまして",
+      "reading": "",
+      "meaning": "처음 뵙겠습니다",
+      "pos": "어휘",
+      "category": "인사·회의",
+      "note": "첫 인사",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "늘 신세지고 있습니다"
+      ],
+      "ja": "お世話になっております",
+      "reading": "",
+      "meaning": "늘 신세지고 있습니다",
+      "pos": "표현",
+      "category": "인사·회의",
+      "note": "비즈니스 인사",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "잘 부탁드립니다"
+      ],
+      "ja": "よろしくお願いいたします",
+      "reading": "",
+      "meaning": "잘 부탁드립니다",
+      "pos": "표현",
+      "category": "인사·회의",
+      "note": "범용 공식 인사",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "오늘 감사합니다"
+      ],
+      "ja": "本日はありがとうございます",
+      "reading": "",
+      "meaning": "오늘 감사합니다",
+      "pos": "표현",
+      "category": "인사·회의",
+      "note": "방문 시작·마무리",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "시간 내주셔서 감사합니다"
+      ],
+      "ja": "お時間をいただき、ありがとうございます",
+      "reading": "",
+      "meaning": "시간 내주셔서 감사합니다",
+      "pos": "표현",
+      "category": "인사·회의",
+      "note": "공식 방문",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "실례하겠습니다"
+      ],
+      "ja": "お邪魔します",
+      "reading": "",
+      "meaning": "실례하겠습니다",
+      "pos": "어휘",
+      "category": "인사·회의",
+      "note": "시설·집에 들어갈 때",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "송구합니다",
+        "감사합니다"
+      ],
+      "ja": "恐れ入ります",
+      "reading": "",
+      "meaning": "송구합니다/감사합니다",
+      "pos": "어휘",
+      "category": "인사·회의",
+      "note": "요청·감사 완충",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "그러네요",
+        "그렇군요"
+      ],
+      "ja": "そうですね",
+      "reading": "",
+      "meaning": "그러네요/그렇군요",
+      "pos": "어휘",
+      "category": "인사·회의",
+      "note": "생각할 시간 확보에도 유용",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "많이 배웁니다"
+      ],
+      "ja": "勉強になります",
+      "reading": "",
+      "meaning": "많이 배웁니다",
+      "pos": "어휘",
+      "category": "인사·회의",
+      "note": "견학 반응",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "참고가 됩니다"
+      ],
+      "ja": "参考になります",
+      "reading": "",
+      "meaning": "참고가 됩니다",
+      "pos": "어휘",
+      "category": "인사·회의",
+      "note": "기관 교류 반응",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "매우 흥미롭습니다"
+      ],
+      "ja": "とても興味深いです",
+      "reading": "",
+      "meaning": "매우 흥미롭습니다",
+      "pos": "표현",
+      "category": "인사·회의",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "조금 더 자세히 알려주실 수 있나요?"
+      ],
+      "ja": "もう少し詳しく教えていただけますか",
+      "reading": "",
+      "meaning": "조금 더 자세히 알려주실 수 있나요?",
+      "pos": "표현",
+      "category": "인사·회의",
+      "note": "질문 확장",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "한 번 더 부탁드릴 수 있을까요?"
+      ],
+      "ja": "もう一度お願いできますか",
+      "reading": "",
+      "meaning": "한 번 더 부탁드릴 수 있을까요?",
+      "pos": "표현",
+      "category": "인사·회의",
+      "note": "듣기 실패 대처",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "조금 천천히 부탁드려도 될까요?"
+      ],
+      "ja": "少しゆっくりお願いできますか",
+      "reading": "",
+      "meaning": "조금 천천히 부탁드려도 될까요?",
+      "pos": "표현",
+      "category": "인사·회의",
+      "note": "통역 생존표현",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "방금 부분을 확인해도 될까요?"
+      ],
+      "ja": "今の部分を確認してもよろしいですか",
+      "reading": "",
+      "meaning": "방금 부분을 확인해도 될까요?",
+      "pos": "표현",
+      "category": "인사·회의",
+      "note": "통역 확인",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "즉, ~라는 뜻일까요?"
+      ],
+      "ja": "つまり、～ということでしょうか",
+      "reading": "",
+      "meaning": "즉, ~라는 뜻일까요?",
+      "pos": "표현",
+      "category": "인사·회의",
+      "note": "재확인",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "이쪽"
+      ],
+      "ja": "こちら",
+      "reading": "",
+      "meaning": "이쪽",
+      "pos": "어휘",
+      "category": "이동·길찾기",
+      "note": "정중",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "그쪽"
+      ],
+      "ja": "そちら",
+      "reading": "",
+      "meaning": "그쪽",
+      "pos": "어휘",
+      "category": "이동·길찾기",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "저쪽"
+      ],
+      "ja": "あちら",
+      "reading": "",
+      "meaning": "저쪽",
+      "pos": "어휘",
+      "category": "이동·길찾기",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "곧장"
+      ],
+      "ja": "まっすぐ",
+      "reading": "",
+      "meaning": "곧장",
+      "pos": "어휘",
+      "category": "이동·길찾기",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "계단"
+      ],
+      "ja": "階段",
+      "reading": "",
+      "meaning": "계단",
+      "pos": "어휘",
+      "category": "이동·길찾기",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "엘리베이터"
+      ],
+      "ja": "エレベーター",
+      "reading": "",
+      "meaning": "엘리베이터",
+      "pos": "어휘",
+      "category": "이동·길찾기",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "주차장"
+      ],
+      "ja": "駐車場",
+      "reading": "",
+      "meaning": "주차장",
+      "pos": "어휘",
+      "category": "이동·길찾기",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "늦다"
+      ],
+      "ja": "遅れる",
+      "reading": "",
+      "meaning": "늦다",
+      "pos": "어휘",
+      "category": "이동·길찾기",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "시간에 맞다"
+      ],
+      "ja": "間に合う",
+      "reading": "",
+      "meaning": "시간에 맞다",
+      "pos": "어휘",
+      "category": "이동·길찾기",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "길을 잃다"
+      ],
+      "ja": "道に迷う",
+      "reading": "",
+      "meaning": "길을 잃다",
+      "pos": "어휘",
+      "category": "이동·길찾기",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "얼마나 걸리나요?"
+      ],
+      "ja": "どのくらいかかりますか",
+      "reading": "",
+      "meaning": "얼마나 걸리나요?",
+      "pos": "표현",
+      "category": "이동·길찾기",
+      "note": "시간·거리",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "여기서 가까운가요?"
+      ],
+      "ja": "ここから近いですか",
+      "reading": "",
+      "meaning": "여기서 가까운가요?",
+      "pos": "표현",
+      "category": "이동·길찾기",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "교통체증"
+      ],
+      "ja": "渋滞",
+      "reading": "",
+      "meaning": "교통체증",
+      "pos": "어휘",
+      "category": "이동·길찾기",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "붐비다"
+      ],
+      "ja": "混んでいる",
+      "reading": "",
+      "meaning": "붐비다",
+      "pos": "어휘",
+      "category": "이동·길찾기",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "추천"
+      ],
+      "ja": "おすすめ",
+      "reading": "",
+      "meaning": "추천",
+      "pos": "어휘",
+      "category": "식사",
+      "note": "おすすめは何ですか",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "자리"
+      ],
+      "ja": "席",
+      "reading": "",
+      "meaning": "자리",
+      "pos": "어휘",
+      "category": "식사",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "개별실",
+        "룸"
+      ],
+      "ja": "個室",
+      "reading": "",
+      "meaning": "개별실·룸",
+      "pos": "어휘",
+      "category": "식사",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "물"
+      ],
+      "ja": "お水",
+      "reading": "",
+      "meaning": "물",
+      "pos": "어휘",
+      "category": "식사",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "차"
+      ],
+      "ja": "お茶",
+      "reading": "",
+      "meaning": "차",
+      "pos": "어휘",
+      "category": "식사",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "리필",
+        "한 그릇 더"
+      ],
+      "ja": "おかわり",
+      "reading": "",
+      "meaning": "리필·한 그릇 더",
+      "pos": "어휘",
+      "category": "식사",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "잘 못 먹습니다",
+        "선호하지 않습니다"
+      ],
+      "ja": "苦手です",
+      "reading": "",
+      "meaning": "잘 못 먹습니다/선호하지 않습니다",
+      "pos": "어휘",
+      "category": "식사",
+      "note": "직접 “싫다”보다 부드러움",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "먹을 수 없습니다"
+      ],
+      "ja": "食べられません",
+      "reading": "",
+      "meaning": "먹을 수 없습니다",
+      "pos": "어휘",
+      "category": "식사",
+      "note": "알레르기·제한",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "알레르기"
+      ],
+      "ja": "アレルギー",
+      "reading": "",
+      "meaning": "알레르기",
+      "pos": "어휘",
+      "category": "식사",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "나누어 담다"
+      ],
+      "ja": "取り分ける",
+      "reading": "",
+      "meaning": "나누어 담다",
+      "pos": "어휘",
+      "category": "식사",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "맛이 진하다"
+      ],
+      "ja": "濃い",
+      "reading": "",
+      "meaning": "맛이 진하다",
+      "pos": "어휘",
+      "category": "식사",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "맛이 연하다"
+      ],
+      "ja": "薄い",
+      "reading": "",
+      "meaning": "맛이 연하다",
+      "pos": "어휘",
+      "category": "식사",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "맛있습니다"
+      ],
+      "ja": "おいしいです",
+      "reading": "",
+      "meaning": "맛있습니다",
+      "pos": "어휘",
+      "category": "식사",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "잘 먹었습니다"
+      ],
+      "ja": "ごちそうさまでした",
+      "reading": "",
+      "meaning": "잘 먹었습니다",
+      "pos": "표현",
+      "category": "식사",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "계산"
+      ],
+      "ja": "会計",
+      "reading": "",
+      "meaning": "계산",
+      "pos": "어휘",
+      "category": "식사",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "따로따로"
+      ],
+      "ja": "別々に",
+      "reading": "",
+      "meaning": "따로따로",
+      "pos": "어휘",
+      "category": "식사",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "영수증"
+      ],
+      "ja": "領収書",
+      "reading": "",
+      "meaning": "영수증",
+      "pos": "어휘",
+      "category": "식사",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "체크인"
+      ],
+      "ja": "チェックイン",
+      "reading": "",
+      "meaning": "체크인",
+      "pos": "어휘",
+      "category": "숙소·쇼핑",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "체크아웃"
+      ],
+      "ja": "チェックアウト",
+      "reading": "",
+      "meaning": "체크아웃",
+      "pos": "어휘",
+      "category": "숙소·쇼핑",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "짐"
+      ],
+      "ja": "荷物",
+      "reading": "",
+      "meaning": "짐",
+      "pos": "어휘",
+      "category": "숙소·쇼핑",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "맡기다"
+      ],
+      "ja": "預ける",
+      "reading": "",
+      "meaning": "맡기다",
+      "pos": "어휘",
+      "category": "숙소·쇼핑",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "받다"
+      ],
+      "ja": "受け取る",
+      "reading": "",
+      "meaning": "받다",
+      "pos": "어휘",
+      "category": "숙소·쇼핑",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "방"
+      ],
+      "ja": "部屋",
+      "reading": "",
+      "meaning": "방",
+      "pos": "어휘",
+      "category": "숙소·쇼핑",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "열쇠"
+      ],
+      "ja": "鍵",
+      "reading": "",
+      "meaning": "열쇠",
+      "pos": "어휘",
+      "category": "숙소·쇼핑",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "충전"
+      ],
+      "ja": "充電",
+      "reading": "",
+      "meaning": "충전",
+      "pos": "어휘",
+      "category": "숙소·쇼핑",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "콘센트"
+      ],
+      "ja": "コンセント",
+      "reading": "",
+      "meaning": "콘센트",
+      "pos": "어휘",
+      "category": "숙소·쇼핑",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "사다"
+      ],
+      "ja": "買う",
+      "reading": "",
+      "meaning": "사다",
+      "pos": "어휘",
+      "category": "숙소·쇼핑",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "얼마인가요?"
+      ],
+      "ja": "いくらですか",
+      "reading": "",
+      "meaning": "얼마인가요?",
+      "pos": "어휘",
+      "category": "숙소·쇼핑",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "현금"
+      ],
+      "ja": "現金",
+      "reading": "",
+      "meaning": "현금",
+      "pos": "어휘",
+      "category": "숙소·쇼핑",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "신용카드"
+      ],
+      "ja": "クレジットカード",
+      "reading": "",
+      "meaning": "신용카드",
+      "pos": "어휘",
+      "category": "숙소·쇼핑",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "영수증(간이)"
+      ],
+      "ja": "レシート",
+      "reading": "",
+      "meaning": "영수증(간이)",
+      "pos": "어휘",
+      "category": "숙소·쇼핑",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "봉투"
+      ],
+      "ja": "袋",
+      "reading": "",
+      "meaning": "봉투",
+      "pos": "어휘",
+      "category": "숙소·쇼핑",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "오전"
+      ],
+      "ja": "午前",
+      "reading": "",
+      "meaning": "오전",
+      "pos": "어휘",
+      "category": "시간·일정",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "오후"
+      ],
+      "ja": "午後",
+      "reading": "",
+      "meaning": "오후",
+      "pos": "어휘",
+      "category": "시간·일정",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "시작"
+      ],
+      "ja": "開始",
+      "reading": "",
+      "meaning": "시작",
+      "pos": "어휘",
+      "category": "시간·일정",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "종료"
+      ],
+      "ja": "終了",
+      "reading": "",
+      "meaning": "종료",
+      "pos": "어휘",
+      "category": "시간·일정",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "변경"
+      ],
+      "ja": "変更",
+      "reading": "",
+      "meaning": "변경",
+      "pos": "어휘",
+      "category": "시간·일정",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "조금 일찍"
+      ],
+      "ja": "少し早めに",
+      "reading": "",
+      "meaning": "조금 일찍",
+      "pos": "어휘",
+      "category": "시간·일정",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "조금 늦겠습니다"
+      ],
+      "ja": "少し遅れます",
+      "reading": "",
+      "meaning": "조금 늦겠습니다",
+      "pos": "어휘",
+      "category": "시간·일정",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "몇 시쯤"
+      ],
+      "ja": "何時ごろ",
+      "reading": "",
+      "meaning": "몇 시쯤",
+      "pos": "어휘",
+      "category": "시간·일정",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "어느 정도",
+        "얼마나"
+      ],
+      "ja": "どのくらい",
+      "reading": "",
+      "meaning": "어느 정도/얼마나",
+      "pos": "어휘",
+      "category": "시간·일정",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "아까",
+        "조금 전"
+      ],
+      "ja": "先ほど",
+      "reading": "",
+      "meaning": "아까/조금 전",
+      "pos": "어휘",
+      "category": "시간·일정",
+      "note": "정중",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "나중에",
+        "잠시 후"
+      ],
+      "ja": "後ほど",
+      "reading": "",
+      "meaning": "나중에/잠시 후",
+      "pos": "어휘",
+      "category": "시간·일정",
+      "note": "비즈니스",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "정말인가요?"
+      ],
+      "ja": "本当ですか",
+      "reading": "",
+      "meaning": "정말인가요?",
+      "pos": "어휘",
+      "category": "대화·반응",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "그렇군요"
+      ],
+      "ja": "そうなんですね",
+      "reading": "",
+      "meaning": "그렇군요",
+      "pos": "어휘",
+      "category": "대화·반응",
+      "note": "자연스러운 맞장구",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "좋네요"
+      ],
+      "ja": "いいですね",
+      "reading": "",
+      "meaning": "좋네요",
+      "pos": "어휘",
+      "category": "대화·반응",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "대단하네요"
+      ],
+      "ja": "すごいですね",
+      "reading": "",
+      "meaning": "대단하네요",
+      "pos": "어휘",
+      "category": "대화·반응",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "다행입니다",
+        "좋았습니다"
+      ],
+      "ja": "よかったです",
+      "reading": "",
+      "meaning": "다행입니다/좋았습니다",
+      "pos": "어휘",
+      "category": "대화·반응",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "기대됩니다"
+      ],
+      "ja": "楽しみです",
+      "reading": "",
+      "meaning": "기대됩니다",
+      "pos": "어휘",
+      "category": "대화·반응",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "도움이 됩니다"
+      ],
+      "ja": "助かります",
+      "reading": "",
+      "meaning": "도움이 됩니다",
+      "pos": "어휘",
+      "category": "대화·반응",
+      "note": "감사 뉘앙스",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "안심했습니다"
+      ],
+      "ja": "安心しました",
+      "reading": "",
+      "meaning": "안심했습니다",
+      "pos": "어휘",
+      "category": "대화·반응",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "그런 뜻이군요"
+      ],
+      "ja": "そういうことですね",
+      "reading": "",
+      "meaning": "그런 뜻이군요",
+      "pos": "표현",
+      "category": "대화·반응",
+      "note": "이해 확인",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "확실히 그렇네요"
+      ],
+      "ja": "たしかにそうですね",
+      "reading": "",
+      "meaning": "확실히 그렇네요",
+      "pos": "표현",
+      "category": "대화·반응",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "그건 힘드시겠네요"
+      ],
+      "ja": "それは大変ですね",
+      "reading": "",
+      "meaning": "그건 힘드시겠네요",
+      "pos": "어휘",
+      "category": "대화·반응",
+      "note": "공감",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "그렇군요, 잘 알겠습니다"
+      ],
+      "ja": "なるほど、よく分かりました",
+      "reading": "",
+      "meaning": "그렇군요, 잘 알겠습니다",
+      "pos": "표현",
+      "category": "대화·반응",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "날씨"
+      ],
+      "ja": "天気",
+      "reading": "",
+      "meaning": "날씨",
+      "pos": "어휘",
+      "category": "일상주제",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "예쁘다",
+        "깨끗하다"
+      ],
+      "ja": "きれい",
+      "reading": "",
+      "meaning": "예쁘다/깨끗하다",
+      "pos": "어휘",
+      "category": "일상주제",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "조용하다"
+      ],
+      "ja": "静か",
+      "reading": "",
+      "meaning": "조용하다",
+      "pos": "어휘",
+      "category": "일상주제",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "활기차다"
+      ],
+      "ja": "にぎやか",
+      "reading": "",
+      "meaning": "활기차다",
+      "pos": "어휘",
+      "category": "일상주제",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "유명하다"
+      ],
+      "ja": "有名",
+      "reading": "",
+      "meaning": "유명하다",
+      "pos": "어휘",
+      "category": "일상주제",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "인기"
+      ],
+      "ja": "人気",
+      "reading": "",
+      "meaning": "인기",
+      "pos": "어휘",
+      "category": "일상주제",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "오랜만"
+      ],
+      "ja": "久しぶり",
+      "reading": "",
+      "meaning": "오랜만",
+      "pos": "어휘",
+      "category": "일상주제",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "취미"
+      ],
+      "ja": "趣味",
+      "reading": "",
+      "meaning": "취미",
+      "pos": "어휘",
+      "category": "일상주제",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "여행"
+      ],
+      "ja": "旅行",
+      "reading": "",
+      "meaning": "여행",
+      "pos": "어휘",
+      "category": "일상주제",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "사진"
+      ],
+      "ja": "写真",
+      "reading": "",
+      "meaning": "사진",
+      "pos": "어휘",
+      "category": "일상주제",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "추천 장소"
+      ],
+      "ja": "おすすめの場所",
+      "reading": "",
+      "meaning": "추천 장소",
+      "pos": "어휘",
+      "category": "일상주제",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "기타큐슈는 처음입니다"
+      ],
+      "ja": "北九州は初めてです",
+      "reading": "",
+      "meaning": "기타큐슈는 처음입니다",
+      "pos": "표현",
+      "category": "일상주제",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "매우 기대하고 있었습니다"
+      ],
+      "ja": "とても楽しみにしていました",
+      "reading": "",
+      "meaning": "매우 기대하고 있었습니다",
+      "pos": "표현",
+      "category": "일상주제",
+      "note": "",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "잘 듣지 못했습니다"
+      ],
+      "ja": "聞き取れませんでした",
+      "reading": "",
+      "meaning": "잘 듣지 못했습니다",
+      "pos": "표현",
+      "category": "문제대처",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "모르는 단어가 있습니다"
+      ],
+      "ja": "分からない言葉があります",
+      "reading": "",
+      "meaning": "모르는 단어가 있습니다",
+      "pos": "표현",
+      "category": "문제대처",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "잠깐 확인하겠습니다"
+      ],
+      "ja": "少し確認させてください",
+      "reading": "",
+      "meaning": "잠깐 확인하겠습니다",
+      "pos": "표현",
+      "category": "문제대처",
+      "note": "통역 중 시간 확보",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "일본어로 뭐라고 하나요?"
+      ],
+      "ja": "日本語では何と言いますか",
+      "reading": "",
+      "meaning": "일본어로 뭐라고 하나요?",
+      "pos": "표현",
+      "category": "문제대처",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "한자로 적어 주실 수 있나요?"
+      ],
+      "ja": "漢字で書いていただけますか",
+      "reading": "",
+      "meaning": "한자로 적어 주실 수 있나요?",
+      "pos": "표현",
+      "category": "문제대처",
+      "note": "전문용어 확인",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "뜻은 알겠는데 단어가 생각나지 않습니다"
+      ],
+      "ja": "意味は分かりますが、言葉が出てきません",
+      "reading": "",
+      "meaning": "뜻은 알겠는데 단어가 생각나지 않습니다",
+      "pos": "표현",
+      "category": "문제대처",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "잠시만 기다려 주세요"
+      ],
+      "ja": "少々お待ちください",
+      "reading": "",
+      "meaning": "잠시만 기다려 주세요",
+      "pos": "표현",
+      "category": "문제대처",
+      "note": "",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "통역을 위해 조금 끊어서 말씀해 주시면 도움이 됩니다"
+      ],
+      "ja": "通訳のため、少し区切ってお話しいただけると助かります",
+      "reading": "",
+      "meaning": "통역을 위해 조금 끊어서 말씀해 주시면 도움이 됩니다",
+      "pos": "표현",
+      "category": "문제대처",
+      "note": "실전 매우 유용",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "조금씩 끊어서 말씀해 주시면 도움이 됩니다."
+      ],
+      "ja": "少し区切ってお話しいただけますと助かります。",
+      "reading": "",
+      "meaning": "조금씩 끊어서 말씀해 주시면 도움이 됩니다.",
+      "pos": "표현",
+      "category": "일상",
+      "note": "통역 시작",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "죄송하지만 방금 부분을 한 번 더 부탁드릴 수 있을까요?"
+      ],
+      "ja": "すみません、今のところをもう一度お願いできますか。",
+      "reading": "",
+      "meaning": "죄송하지만 방금 부분을 한 번 더 부탁드릴 수 있을까요?",
+      "pos": "표현",
+      "category": "일상",
+      "note": "못 들었을 때",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "조금 더 천천히 말씀해 주실 수 있을까요?"
+      ],
+      "ja": "もう少しゆっくりお話しいただけますか。",
+      "reading": "",
+      "meaning": "조금 더 천천히 말씀해 주실 수 있을까요?",
+      "pos": "표현",
+      "category": "일상",
+      "note": "속도 조절",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "방금 “〇〇”는 어떤 의미인가요?"
+      ],
+      "ja": "今の「〇〇」は、どういう意味でしょうか。",
+      "reading": "",
+      "meaning": "방금 “〇〇”는 어떤 의미인가요?",
+      "pos": "표현",
+      "category": "일상",
+      "note": "용어 확인",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "가능하시다면 한자로 적어 주실 수 있을까요?"
+      ],
+      "ja": "可能でしたら、漢字で書いていただけますか。",
+      "reading": "",
+      "meaning": "가능하시다면 한자로 적어 주실 수 있을까요?",
+      "pos": "표현",
+      "category": "일상",
+      "note": "한자 확인",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "〇〇라고 이해하면 될까요?"
+      ],
+      "ja": "〇〇という理解でよろしいでしょうか。",
+      "reading": "",
+      "meaning": "〇〇라고 이해하면 될까요?",
+      "pos": "표현",
+      "category": "일상",
+      "note": "의미 재확인",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "잠깐 확인하겠습니다."
+      ],
+      "ja": "少し確認させてください。",
+      "reading": "",
+      "meaning": "잠깐 확인하겠습니다.",
+      "pos": "표현",
+      "category": "일상",
+      "note": "시간 확보",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "조금 정리해서 전달드리겠습니다."
+      ],
+      "ja": "少し整理してお伝えします。",
+      "reading": "",
+      "meaning": "조금 정리해서 전달드리겠습니다.",
+      "pos": "표현",
+      "category": "일상",
+      "note": "통역 중 정리",
+      "priority": 98,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "한 가지 확인해도 될까요?"
+      ],
+      "ja": "一点、確認させていただいてもよろしいでしょうか。",
+      "reading": "",
+      "meaning": "한 가지 확인해도 될까요?",
+      "pos": "표현",
+      "category": "일상",
+      "note": "질문 시작",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "한 가지 더 관련해서 여쭤봐도 될까요?"
+      ],
+      "ja": "もう一点、関連してお伺いしてもよろしいでしょうか。",
+      "reading": "",
+      "meaning": "한 가지 더 관련해서 여쭤봐도 될까요?",
+      "pos": "표현",
+      "category": "일상",
+      "note": "추가 질문",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "구체적인 예를 하나 들어주실 수 있을까요?"
+      ],
+      "ja": "具体的な例を一つ教えていただけますか。",
+      "reading": "",
+      "meaning": "구체적인 예를 하나 들어주실 수 있을까요?",
+      "pos": "표현",
+      "category": "일상",
+      "note": "예시 요청",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "실제로는 어떻게 대응하고 계신가요?"
+      ],
+      "ja": "実際には、どのように対応されていますか。",
+      "reading": "",
+      "meaning": "실제로는 어떻게 대응하고 계신가요?",
+      "pos": "표현",
+      "category": "일상",
+      "note": "현장 확인",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "어느 정도 빈도로 실시하나요?"
+      ],
+      "ja": "どのくらいの頻度で行っていますか。",
+      "reading": "",
+      "meaning": "어느 정도 빈도로 실시하나요?",
+      "pos": "표현",
+      "category": "일상",
+      "note": "빈도 질문",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "주로 누가 담당하시나요?"
+      ],
+      "ja": "主にどなたが担当されていますか。",
+      "reading": "",
+      "meaning": "주로 누가 담당하시나요?",
+      "pos": "표현",
+      "category": "일상",
+      "note": "담당 질문",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "어떤 방식으로 결정하나요?"
+      ],
+      "ja": "どのように決めているのでしょうか。",
+      "reading": "",
+      "meaning": "어떤 방식으로 결정하나요?",
+      "pos": "표현",
+      "category": "일상",
+      "note": "결정 과정",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "본인의 의사는 어떻게 확인하시나요?"
+      ],
+      "ja": "ご本人の意思は、どのように確認されていますか。",
+      "reading": "",
+      "meaning": "본인의 의사는 어떻게 확인하시나요?",
+      "pos": "표현",
+      "category": "일상",
+      "note": "본인 의사",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "가족과는 어떻게 연계하시나요?"
+      ],
+      "ja": "ご家族とは、どのように連携されていますか。",
+      "reading": "",
+      "meaning": "가족과는 어떻게 연계하시나요?",
+      "pos": "표현",
+      "category": "일상",
+      "note": "가족 연계",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "한국과 제도가 조금 달라서 매우 참고가 됩니다."
+      ],
+      "ja": "韓国とは制度が少し違うので、とても参考になります。",
+      "reading": "",
+      "meaning": "한국과 제도가 조금 달라서 매우 참고가 됩니다.",
+      "pos": "표현",
+      "category": "일상",
+      "note": "한일 비교",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "한국에서는 제도상 위치가 조금 다릅니다."
+      ],
+      "ja": "韓国では制度上の位置づけが少し異なります。",
+      "reading": "",
+      "meaning": "한국에서는 제도상 위치가 조금 다릅니다.",
+      "pos": "표현",
+      "category": "일상",
+      "note": "제도차이 주의",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "일본 제도로 그대로 치환하기는 어렵지만, 가까운 내용으로는 ~입니다."
+      ],
+      "ja": "日本の制度にそのまま置き換えるのは難しいのですが、近い内容としては～です。",
+      "reading": "",
+      "meaning": "일본 제도로 그대로 치환하기는 어렵지만, 가까운 내용으로는 ~입니다.",
+      "pos": "표현",
+      "category": "일상",
+      "note": "번역 완충",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "저희 센터에서는 지역에 나가 배우는 것을 중요하게 생각합니다."
+      ],
+      "ja": "私たちのセンターでは、地域に出て学ぶことを大切にしています。",
+      "reading": "",
+      "meaning": "저희 센터에서는 지역에 나가 배우는 것을 중요하게 생각합니다.",
+      "pos": "표현",
+      "category": "일상",
+      "note": "미선 설명",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "본인의 희망을 고려해 개별 목표를 설정합니다."
+      ],
+      "ja": "ご本人の希望を踏まえて、個別の目標を設定しています。",
+      "reading": "",
+      "meaning": "본인의 희망을 고려해 개별 목표를 설정합니다.",
+      "pos": "표현",
+      "category": "일상",
+      "note": "목표 설정",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "가능한 한 본인이 선택할 수 있도록 지원하고 있습니다."
+      ],
+      "ja": "できるだけご本人が選べるように支援しています。",
+      "reading": "",
+      "meaning": "가능한 한 본인이 선택할 수 있도록 지원하고 있습니다.",
+      "pos": "표현",
+      "category": "일상",
+      "note": "지원 철학",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "우선 상호이해를 깊게 하고 그 뒤 향후 협력을 검토할 수 있으면 합니다."
+      ],
+      "ja": "まずは相互理解を深め、その上で今後の協力について検討できればと思います。",
+      "reading": "",
+      "meaning": "우선 상호이해를 깊게 하고 그 뒤 향후 협력을 검토할 수 있으면 합니다.",
+      "pos": "표현",
+      "category": "일상",
+      "note": "MOU 전 단계",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "오늘 매우 귀중한 말씀을 들려주셔서 감사합니다."
+      ],
+      "ja": "本日は大変貴重なお話を聞かせていただき、ありがとうございました。",
+      "reading": "",
+      "meaning": "오늘 매우 귀중한 말씀을 들려주셔서 감사합니다.",
+      "pos": "표현",
+      "category": "일상",
+      "note": "감사 마무리",
+      "priority": 88,
+      "source": "2026 종합집"
+    },
+    {
+      "ko": [
+        "다양한",
+        "여러 가지",
+        "여러가지"
+      ],
+      "ja": "さまざまな",
+      "reading": "",
+      "meaning": "다양한 / 여러 가지",
+      "pos": "표현",
+      "category": "일반",
+      "note": "가장 범용적인 표현",
+      "priority": 110,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "다양성"
+      ],
+      "ja": "多様性",
+      "reading": "",
+      "meaning": "다양성",
+      "pos": "표현",
+      "category": "가치",
+      "note": "종류·특성의 다양성",
+      "priority": 108,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "포용",
+        "포용성"
+      ],
+      "ja": "包摂",
+      "reading": "",
+      "meaning": "포용 / 사회적 포용",
+      "pos": "표현",
+      "category": "가치",
+      "note": "정책·복지·학술 맥락",
+      "priority": 110,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "포용적인"
+      ],
+      "ja": "包摂的な",
+      "reading": "",
+      "meaning": "포용적인",
+      "pos": "표현",
+      "category": "가치",
+      "note": "공식적 표현. 쉬운 말로 풀어 말할 수도 있음",
+      "priority": 109,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "전 생애",
+        "평생에 걸쳐",
+        "생애 전체"
+      ],
+      "ja": "生涯にわたって",
+      "reading": "",
+      "meaning": "전 생애에 걸쳐",
+      "pos": "표현",
+      "category": "생애주기",
+      "note": "사람의 삶 전체를 말할 때",
+      "priority": 112,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "생애주기 전반",
+        "전 생애주기"
+      ],
+      "ja": "ライフステージ全体",
+      "reading": "",
+      "meaning": "생애주기 전반",
+      "pos": "표현",
+      "category": "생애주기",
+      "note": "기관 소개에서 말하기 쉬움",
+      "priority": 112,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "동행하다",
+        "함께 걸어가다"
+      ],
+      "ja": "寄り添う",
+      "reading": "",
+      "meaning": "곁에서 함께하다 / 동행하다",
+      "pos": "표현",
+      "category": "가치",
+      "note": "지원 관계에서는 同行する보다 자연스러움",
+      "priority": 112,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "함께 걸어가다",
+        "함께 걸어간다"
+      ],
+      "ja": "ともに歩む",
+      "reading": "",
+      "meaning": "함께 걸어가다",
+      "pos": "표현",
+      "category": "가치",
+      "note": "비전·슬로건에 자연스러움",
+      "priority": 108,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "지속적인",
+        "계속되는"
+      ],
+      "ja": "継続的な",
+      "reading": "",
+      "meaning": "지속적인",
+      "pos": "표현",
+      "category": "일반",
+      "note": "공식적이고 범용적",
+      "priority": 108,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "지속적인 변화"
+      ],
+      "ja": "継続的な変化",
+      "reading": "",
+      "meaning": "지속적인 변화",
+      "pos": "표현",
+      "category": "가치",
+      "note": "원문 의미를 직접 살림",
+      "priority": 110,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "변화를 쌓아가다",
+        "변화를 쌓다"
+      ],
+      "ja": "変化を積み重ねる",
+      "reading": "",
+      "meaning": "변화를 쌓아가다",
+      "pos": "표현",
+      "category": "가치",
+      "note": "작은 변화를 축적한다는 뉘앙스",
+      "priority": 108,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "보통의 삶"
+      ],
+      "ja": "普通の暮らし",
+      "reading": "",
+      "meaning": "보통의 삶",
+      "pos": "표현",
+      "category": "가치",
+      "note": "원문·슬로건 충실. 무엇이 보통인가라는 질문을 포함할 수 있음",
+      "priority": 115,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "당연한 삶",
+        "당연한 일상"
+      ],
+      "ja": "当たり前の暮らし",
+      "reading": "",
+      "meaning": "당연하게 누리는 삶",
+      "pos": "표현",
+      "category": "가치",
+      "note": "권리·지역생활의 당연함 강조",
+      "priority": 107,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "그 사람다운 삶",
+        "자기다운 삶"
+      ],
+      "ja": "その人らしい暮らし",
+      "reading": "",
+      "meaning": "그 사람다운 삶",
+      "pos": "표현",
+      "category": "가치",
+      "note": "개별성과 자기결정 강조. 보통의 삶과 완전히 같은 뜻은 아님",
+      "priority": 108,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "실현하다",
+        "실현한다"
+      ],
+      "ja": "実現する",
+      "reading": "",
+      "meaning": "실현하다",
+      "pos": "표현",
+      "category": "동사",
+      "note": "목표·비전 실현",
+      "priority": 110,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "전반",
+        "전반적으로"
+      ],
+      "ja": "全般",
+      "reading": "",
+      "meaning": "전반 / 전반적으로",
+      "pos": "표현",
+      "category": "일반",
+      "note": "분야 전체를 넓게 가리킴",
+      "priority": 103,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "최초로",
+        "처음으로"
+      ],
+      "ja": "初めて",
+      "reading": "",
+      "meaning": "최초로 / 처음으로",
+      "pos": "표현",
+      "category": "일반",
+      "note": "회화에서는 初めて가 자연스러움",
+      "priority": 108,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "인천 최초",
+        "인천에서 최초"
+      ],
+      "ja": "仁川で初めて",
+      "reading": "",
+      "meaning": "인천에서 최초로",
+      "pos": "표현",
+      "category": "기관소개",
+      "note": "지역 최초 사업 소개",
+      "priority": 110,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "시행하다",
+        "시행하고 있다"
+      ],
+      "ja": "実施する",
+      "reading": "",
+      "meaning": "시행하다 / 실시하다",
+      "pos": "표현",
+      "category": "운영",
+      "note": "서비스·프로그램 실시",
+      "priority": 108,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "실천하다",
+        "실천하고 있다"
+      ],
+      "ja": "実践する",
+      "reading": "",
+      "meaning": "실천하다",
+      "pos": "표현",
+      "category": "운영",
+      "note": "철학·지원방법을 실제로 실행",
+      "priority": 104,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "제공하다",
+        "제공하고 있다"
+      ],
+      "ja": "提供する",
+      "reading": "",
+      "meaning": "제공하다",
+      "pos": "표현",
+      "category": "운영",
+      "note": "서비스 제공",
+      "priority": 108,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "운영하다",
+        "운영하고 있다"
+      ],
+      "ja": "運営する",
+      "reading": "",
+      "meaning": "운영하다",
+      "pos": "표현",
+      "category": "운영",
+      "note": "기관·시설·사업 운영",
+      "priority": 110,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "협력해오다",
+        "협력해 왔다"
+      ],
+      "ja": "協力してきた",
+      "reading": "",
+      "meaning": "협력해오다",
+      "pos": "표현",
+      "category": "연계",
+      "note": "일반 협력의 지속",
+      "priority": 105,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "연계해오다",
+        "연계해 왔다"
+      ],
+      "ja": "連携してきた",
+      "reading": "",
+      "meaning": "연계해오다",
+      "pos": "표현",
+      "category": "연계",
+      "note": "기관·지역과의 체계적 연계 지속",
+      "priority": 110,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "통해",
+        "통해서"
+      ],
+      "ja": "～を通じて",
+      "reading": "",
+      "meaning": "~을 통해",
+      "pos": "표현",
+      "category": "문법",
+      "note": "기관·경험·과정을 매개로",
+      "priority": 110,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "영유아",
+        "영유아기"
+      ],
+      "ja": "乳幼児期",
+      "reading": "",
+      "meaning": "영유아기",
+      "pos": "표현",
+      "category": "아동",
+      "note": "영아·유아 시기",
+      "priority": 110,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "조기개입",
+        "조기 개입"
+      ],
+      "ja": "早期支援 / 早期介入",
+      "reading": "",
+      "meaning": "조기개입 / 조기지원",
+      "pos": "표현",
+      "category": "아동",
+      "note": "일본 현장에서는 맥락에 따라 早期支援가 부드러움",
+      "priority": 112,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "복지서비스",
+        "복지 서비스"
+      ],
+      "ja": "福祉サービス",
+      "reading": "",
+      "meaning": "복지서비스",
+      "pos": "표현",
+      "category": "복지",
+      "note": "포괄적 표현",
+      "priority": 110,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "다양한 복지서비스",
+        "여러 복지서비스"
+      ],
+      "ja": "さまざまな福祉サービス",
+      "reading": "",
+      "meaning": "다양한 복지서비스",
+      "pos": "표현",
+      "category": "복지",
+      "note": "기관 소개에서 바로 사용 가능",
+      "priority": 112,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "장애인복지사업",
+        "장애인 복지사업"
+      ],
+      "ja": "障害福祉事業",
+      "reading": "",
+      "meaning": "장애복지사업",
+      "pos": "표현",
+      "category": "제도주의",
+      "note": "일본에서는 障害福祉가 일반적. 법정서비스를 특정하면 障害福祉サービス事業",
+      "priority": 115,
+      "source": "v0.14 번역팩"
+    },
+    {
+      "ko": [
+        "장애인의 전 생애",
+        "장애인 전 생애"
+      ],
+      "ja": "障害のある方の生涯",
+      "reading": "",
+      "meaning": "장애인의 전 생애",
+      "pos": "표현",
+      "category": "가치",
+      "note": "사람 중심 표현",
+      "priority": 115,
+      "source": "v0.14 번역팩"
     }
   ]
 }

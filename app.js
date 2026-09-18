@@ -26,6 +26,10 @@ const koTermResultEl = document.getElementById('ko-term-result');
 const koGrammarResultEl = document.getElementById('ko-grammar-result');
 const koNaturalResultEl = document.getElementById('ko-natural-result');
 const koAssemblyResultEl = document.getElementById('ko-assembly-result');
+const koPackResultEl = document.getElementById('ko-pack-result');
+const koCoverageScoreEl = document.getElementById('ko-coverage-score');
+const koMissingMiniEl = document.getElementById('ko-missing-mini');
+const koMissingResultEl = document.getElementById('ko-missing-result');
 const koAssistBadgeEl = document.getElementById('ko-assist-badge');
 const jpHintSectionEl = document.getElementById('jp-hint-section');
 const jpAnalysisGridEl = document.getElementById('jp-analysis-grid');
@@ -80,6 +84,7 @@ let koGrammarDB = [];
 let koNaturalDB = [];
 let koConceptsDB = [];
 let generalWordsDB = [];
+let koTranslationPacksDB = [];
 
 let currentDetectedKeywords = new Set();
 let currentDetectedGrammar = new Set();
@@ -118,6 +123,7 @@ function escapeHtml(text) {
 }
 
 function setLanguageLabel() {
+  document.body.dataset.language = currentLang;
   const isJapanese = currentLang === 'ja-JP';
   currentLangEl.textContent = isJapanese ? '일본어 (ja-JP)' : '한국어 (ko-KR)';
   speakerBadgeEl.textContent = isJapanese ? '일본측' : '한국측';
@@ -146,7 +152,7 @@ function setLanguageLabel() {
 
 async function loadData() {
   try {
-    const [termsRes, grammarRes, questionsRes, readingsRes, topicsRes, translationsRes, koAssistRes, generalLexiconRes] =
+    const [termsRes, grammarRes, questionsRes, readingsRes, topicsRes, translationsRes, koAssistRes, generalLexiconRes, translationPacksRes] =
       await Promise.all([
         fetch('data.json'),
         fetch('grammar.json'),
@@ -155,7 +161,8 @@ async function loadData() {
         fetch('topics.json'),
         fetch('translations.json'),
         fetch('korean_assist.json'),
-        fetch('general_lexicon.json')
+        fetch('general_lexicon.json'),
+        fetch('translation_packs.json')
       ]);
 
     const termsData = await termsRes.json();
@@ -166,6 +173,7 @@ async function loadData() {
     const translationsData = await translationsRes.json();
     const koAssistData = await koAssistRes.json();
     const generalLexiconData = await generalLexiconRes.json();
+    const translationPacksData = await translationPacksRes.json();
 
     termsDB = termsData.terms || [];
     grammarDB = grammarData.grammar || [];
@@ -179,7 +187,15 @@ async function loadData() {
     koNaturalDB = koAssistData.natural || [];
     koConceptsDB = koAssistData.concepts || [];
     generalWordsDB = generalLexiconData.words || [];
+    koTranslationPacksDB = translationPacksData.packs || [];
 
+    // Include trusted whole-word readings; never guess unknown kanji readings.
+    const readingMap = new Map(readingsDB);
+    for (const item of [...termsDB, ...generalWordsDB]) {
+      const word = item.keyword || item.ja;
+      if (word && item.reading && !readingMap.has(word)) readingMap.set(word, item.reading);
+    }
+    readingsDB = [...readingMap].filter(([word, reading]) => word && reading);
     readingsDB.sort((a, b) => b[0].length - a[0].length);
 
     log(`전문용어 DB ${termsDB.length}개 로드 완료`);
@@ -194,9 +210,13 @@ async function loadData() {
     log(`일본어식 표현 주의 DB ${koNaturalDB.length}개 로드 완료`);
     log(`한국어 의미개념 DB ${koConceptsDB.length}개 로드 완료`);
     log(`일반 일본어 어휘 DB ${generalWordsDB.length}개 로드 완료`);
-    if (dbStatusEl) dbStatusEl.textContent = `${generalWordsDB.length}어휘 · KO문법 ${koGrammarDB.length} · 개념 ${koConceptsDB.length}`;
+    log(`한국어 문맥 번역팩 ${koTranslationPacksDB.length}개 로드 완료`);
+    if (dbStatusEl) dbStatusEl.textContent = `${generalWordsDB.length}어휘 · 번역팩 ${koTranslationPacksDB.length} · KO문법 ${koGrammarDB.length}`;
+    document.dispatchEvent(new Event('interpreter-ready'));
   } catch (err) {
     log(`DB 로드 실패: ${err.message}`);
+    dbStatusEl.textContent = '로드 실패 · 페이지를 새로고침하세요';
+    document.dispatchEvent(new Event('interpreter-load-error'));
   }
 }
 
@@ -313,6 +333,7 @@ function analyzeCurrentText(text) {
   renderDetectedGrammar();
   renderDetectedGeneralWords();
   renderMeaningHints();
+  document.dispatchEvent(new Event('interpreter-analysis'));
 
   if (currentLang === 'ja-JP') {
     detectTopic(text);
@@ -829,10 +850,12 @@ function findKoAliasMatch(text, trigger) {
   let idx = raw.indexOf(trig);
   if (idx >= 0) return { matched: trigger, index: idx, quality: 1.0, length: trig.length };
 
-  const compactText = raw.replace(/\s+/g,'');
+  const compactChars=[]; const compactMap=[];
+  for (let ri=0; ri<raw.length; ri++) { if (!/\s/.test(raw[ri])) { compactChars.push(raw[ri]); compactMap.push(ri); } }
+  const compactText = compactChars.join('');
   const compactTrig = trig.replace(/\s+/g,'');
   idx = compactText.indexOf(compactTrig);
-  if (compactTrig.length >= 2 && idx >= 0) return { matched: trigger, index: idx, quality: 0.94, length: compactTrig.length };
+  if (compactTrig.length >= 2 && idx >= 0) return { matched: trigger, index: compactMap[idx] ?? idx, quality: 0.94, length: compactTrig.length };
 
   // 용언 활용형 대응: 검토하다 → 검토하고/검토했습니다, 이용하다 → 이용할
   let root = compactTrig;
@@ -841,7 +864,7 @@ function findKoAliasMatch(text, trigger) {
   else if (root.endsWith('다') && root.length >= 3) root = root.slice(0,-1);
   if (root.length >= 2) {
     idx = compactText.indexOf(root);
-    if (idx >= 0) return { matched: trigger, index: idx, quality: 0.82, length: root.length };
+    if (idx >= 0) return { matched: trigger, index: compactMap[idx] ?? idx, quality: 0.82, length: root.length };
   }
 
   // 문장 중간에 부사/조사가 끼어도 의미 토큰이 모두 있으면 약한 매칭
@@ -867,6 +890,96 @@ function bestKoAlias(text, aliases = []) {
     if (!best || score > best.score) best = { ...m, score };
   }
   return best;
+}
+
+
+function collectKoTranslationPackMatches(text) {
+  return koTranslationPacksDB
+    .map(item => {
+      const m = bestKoAlias(text, item.aliases || []);
+      return m ? { item, matched:[m.matched], match:m,
+        score:(item.priority || 90) + m.length*2 + m.quality*25 } : null;
+    })
+    .filter(Boolean)
+    .sort((a,b)=>(a.match.index-b.match.index) || (b.match.length-a.match.length) || (b.score-a.score))
+    .slice(0,18);
+}
+
+function renderKoTranslationPacks(matches) {
+  if (!koPackResultEl) return;
+  if (!matches.length) {
+    koPackResultEl.innerHTML='<p class="empty-message">문맥형 번역팩이 직접 매칭되지 않았습니다. 일반 단어·문법 DB는 계속 분석합니다.</p>';
+    return;
+  }
+  koPackResultEl.innerHTML=matches.map(({item,matched})=>{
+    const candidates=(item.candidates||[]).slice(0,3).map((c,idx)=>`
+      <div class="pack-candidate ${idx===0?'primary':''}">
+        <div class="pack-ja">${rubyJapaneseText(c.ja || '')}</div>
+        <span class="pack-label">${escapeHtml(c.label || (idx===0?'추천':'대체'))}</span>
+        <div class="pack-nuance">${escapeHtml(c.nuance || '')}</div>
+      </div>`).join('');
+    return `<article class="translation-pack-card ${item.system?'system-pack':''}">
+      <div class="pack-head"><b>${escapeHtml(matched[0])}</b><span>${escapeHtml(item.category || '표현')}</span></div>
+      ${candidates}
+      ${item.note?`<div class="pack-note">${escapeHtml(item.note)}</div>`:''}
+    </article>`;
+  }).join('');
+}
+
+const KO_COVERAGE_STOP = new Set([
+  '저희','우리','제가','제가','그리고','또한','또','그','이','저','것','수','등','때','경우','정도','부분','관련','대해','대한','통해',
+  '에서','에게','으로','하고','하며','있습니다','합니다','입니다','있고','있으며','하는','하여','해서','되고','되는','입니다만','있는데',
+  '를','을','이','가','은','는','도','와','과','에','의','로','만'
+]);
+
+function significantKoTokens(text) {
+  const raw=normalizeKoAssist(text);
+  const out=[];
+  let cursor=0;
+  for (const token of raw.split(/\s+/)) {
+    if (!token) continue;
+    const idx=raw.indexOf(token,cursor); cursor=Math.max(cursor,idx+token.length);
+    const stem=stemKoToken(token);
+    if (!stem || stem.length<2 || KO_COVERAGE_STOP.has(stem) || /^\d+$/.test(stem)) continue;
+    out.push({raw:token,stem,index:idx,end:idx+token.length});
+  }
+  return out;
+}
+
+function computeKoCoverage(text, packMatches, lexicalMatches, grammarMatches) {
+  const tokens=significantKoTokens(text);
+  if (!tokens.length) return {score:100,missing:[],covered:0,total:0};
+  const matchTexts=[];
+  [...packMatches,...lexicalMatches,...grammarMatches].forEach(x=>{
+    if (x.matched?.[0]) matchTexts.push(normalizeKoAssist(x.matched[0]));
+  });
+  const coveredTokens=[]; const missing=[];
+  for (const t of tokens) {
+    const hit=matchTexts.some(m=>{
+      const core=stemKoToken(m.replace(/[~～]/g,''));
+      return m.includes(t.stem) || t.stem.includes(core) || core.includes(t.stem);
+    });
+    if (hit) coveredTokens.push(t); else missing.push(t);
+  }
+  const score=Math.round(coveredTokens.length/tokens.length*100);
+  // de-duplicate adjacent/identical stems, avoid flooding
+  const seen=new Set();
+  const uniq=[];
+  for (const m of missing) { if (!seen.has(m.stem)) { seen.add(m.stem); uniq.push(m); } }
+  return {score,missing:uniq.slice(0,10),covered:coveredTokens.length,total:tokens.length};
+}
+
+function renderKoCoverage(cov) {
+  if (!koCoverageScoreEl) return;
+  koCoverageScoreEl.textContent = cov.total ? `${cov.score}%` : '대기';
+  koCoverageScoreEl.className = cov.score>=80?'good':cov.score>=55?'mid':'low';
+  const miss=cov.missing||[];
+  if (koMissingMiniEl) koMissingMiniEl.innerHTML = miss.length
+    ? `미등록/약한 매칭: ${miss.slice(0,5).map(x=>`<span>${escapeHtml(x.raw)}</span>`).join(' ')}`
+    : (cov.total?'핵심어 기준으로 큰 누락이 감지되지 않았습니다.':'말을 시작하면 누락 가능 표현을 점검합니다.');
+  if (koMissingResultEl) koMissingResultEl.innerHTML = miss.length
+    ? `<div class="missing-list">${miss.map(x=>`<span class="missing-chip">${escapeHtml(x.raw)}</span>`).join('')}</div><div class="missing-help">이 항목은 정확한 번역이 없다는 뜻이 아니라, 현재 로컬 DB가 강하게 연결하지 못한 의미입니다. 빠른 사전검색 또는 쉬운 바꿔말하기로 보완하세요.</div>`
+    : `<p class="empty-message">현재 발화의 주요 내용어가 로컬 힌트에 대부분 연결되었습니다.</p>`;
 }
 
 function collectKoLexicalMatches(text) {
@@ -938,10 +1051,20 @@ function rangesOverlap(a0, a1, b0, b1) {
   return Math.max(a0,b0) < Math.min(a1,b1);
 }
 
-function buildKoAssembly(text, lexicalMatches, grammarMatches) {
+function buildKoAssembly(text, packMatches, lexicalMatches, grammarMatches) {
   // v0.13 핵심: "좋아 보이는 단어 나열"이 아니라 실제 한국어 원문의 위치를 따라간다.
   // 위치를 특정할 수 없는 fuzzy 의미 매칭(index=9999)은 단어 힌트에는 남기되 조립선에서는 제외한다.
   const candidates=[];
+  packMatches.forEach(x=>{
+    if (x.match.index === 9999 || x.match.quality < 0.80) return;
+    const primary=(x.item.candidates||[])[0];
+    if (!primary?.ja) return;
+    candidates.push({
+      kind:'pack', index:x.match.index, end:x.match.index+x.match.length,
+      score:x.score+20, length:x.match.length, source:x.matched[0], ja:primary.ja,
+      meaning:x.item.category || '', category:'번역팩', sourceRank:6
+    });
+  });
   lexicalMatches.forEach(x=>{
     if (x.match.index === 9999 || x.match.quality < 0.80) return;
     candidates.push({
@@ -995,6 +1118,8 @@ function renderKoAssembly(assembly, lexicalMatches, grammarMatches) {
   if (!assembly.length) {
     koAssemblyResultEl.innerHTML='<p class="empty-message">원문 위치를 확인할 수 있는 조립 표현을 아직 찾지 못했습니다. 단어 힌트와 문법 카드는 계속 확인할 수 있습니다.</p>';
     lastLocalAssemblyHtml='';
+    localKoJaResultEl.innerHTML='<p class="empty-message">이 발화에서 조립할 표현을 찾지 못했습니다. 아래 단어 힌트나 사전검색을 확인하세요.</p>';
+    koTranslationBadgeEl.textContent='조립 힌트 없음';
     return;
   }
 
@@ -1002,7 +1127,7 @@ function renderKoAssembly(assembly, lexicalMatches, grammarMatches) {
     <div class="ordered-assembly-item ${n.kind}">
       <span class="order-no">${i+1}</span>
       <div class="ordered-body">
-        <div class="ordered-src">${escapeHtml(n.source)} <span class="kind-tag">${n.kind==='grammar'?'문법':'표현'}</span></div>
+        <div class="ordered-src">${escapeHtml(n.source)} <span class="kind-tag">${n.kind==='grammar'?'문법':n.kind==='pack'?'번역팩':'표현'}</span></div>
         <div class="ordered-jp">${rubyJapaneseText(n.ja)}</div>
       </div>
     </div>`).join('');
@@ -1011,7 +1136,7 @@ function renderKoAssembly(assembly, lexicalMatches, grammarMatches) {
     <div class="assembly-note"><b>말한 순서 기준.</b> 한국어와 일본어의 기본 어순이 비슷한 점을 활용해 원문 위치대로 배치했습니다. 긴 표현이 잡히면 그 안의 짧은 단어·문법은 중복 표시하지 않습니다.</div>`;
 
   const leftFlow=assembly.slice(0,12).map((n,i)=>`${i?'<span>→</span>':''}<span class="chunk"><small>${i+1}</small> ${rubyJapaneseText(n.ja)}</span>`).join('');
-  lastLocalAssemblyHtml=`<div class="local-assembly"><div class="local-assembly-title">LOCAL ORDER · 말한 순서 조립</div><div class="local-assembly-flow">${leftFlow}</div><div class="analysis-stats">원문 위치 기반 ${assembly.length}개 · 전체표현 ${lexicalMatches.length}개 · 문법후보 ${grammarMatches.length}개</div></div>`;
+  lastLocalAssemblyHtml=`<div class="local-assembly"><div class="local-assembly-title">말한 순서대로 · 일본어 조립 힌트</div><div class="local-assembly-flow">${leftFlow}</div><div class="analysis-stats">완성 번역이 아닌 표현 조각입니다. 조사와 어미를 연결해서 사용하세요.</div></div>`;
   if (localKoJaResultEl) localKoJaResultEl.innerHTML=lastLocalAssemblyHtml;
   if (koTranslationBadgeEl) koTranslationBadgeEl.textContent='말한 순서 조립';
 }
@@ -1019,22 +1144,27 @@ function renderKoAssembly(assembly, lexicalMatches, grammarMatches) {
 function analyzeKoreanAssist(text) {
   if (!text || currentLang !== 'ko-KR') return;
 
+  const packMatches = collectKoTranslationPackMatches(text);
   const lexicalMatches = collectKoLexicalMatches(text);
   const termMatches = lexicalMatches.filter(x => x.source === 'special' || x.source === 'concept').slice(0,10);
   const genericMatches = lexicalMatches.filter(x => x.source === 'general').slice(0,10);
   const grammarMatches = collectKoGrammarMatches(text);
   const naturalMatches = collectKoNaturalMatches(text);
-  const assembly = buildKoAssembly(text, lexicalMatches, grammarMatches);
+  const assembly = buildKoAssembly(text, packMatches, lexicalMatches, grammarMatches);
+  const coverage = computeKoCoverage(text, packMatches, lexicalMatches, grammarMatches);
 
-  lastKoAnalysis={text,lexicalMatches,grammarMatches,naturalMatches,assembly};
+  lastKoAnalysis={text,packMatches,lexicalMatches,grammarMatches,naturalMatches,assembly,coverage};
+  renderKoTranslationPacks(packMatches);
+  renderKoCoverage(coverage);
   renderKoTerms(termMatches, genericMatches);
   renderKoGrammar(grammarMatches);
   renderKoNatural(naturalMatches);
   renderKoAssembly(assembly, lexicalMatches, grammarMatches);
+  document.dispatchEvent(new Event('interpreter-analysis'));
 
   const count = lexicalMatches.length + grammarMatches.length + naturalMatches.length;
   const conceptCount=lexicalMatches.filter(x=>x.source==='concept').length;
-  koAssistBadgeEl.textContent = count ? `추천 ${count}개 · 의미개념 ${conceptCount} · 문법 ${grammarMatches.length}` : '직접 매칭 없음';
+  koAssistBadgeEl.textContent = (count + packMatches.length) ? `번역팩 ${packMatches.length} · 표현 ${lexicalMatches.length} · 문법 ${grammarMatches.length} · 커버리지 ${coverage.score}%` : '직접 매칭 없음';
 }
 
 function renderKoTerms(matches, genericMatches = []) {
@@ -1295,7 +1425,7 @@ function buildGeminiPrompt(text, lang) {
 "grammar":[{"ko":"한국어 구조","ja":"일본어 문법/뼈대","meaning":"뜻","nuance":"현장 뉘앙스"}],
 "natural":[{"ko":"직역 주의 표현","recommended":"자연스러운 일본어","reason":"이유"}],
 "system_notes":["한일 제도 차이 또는 오역 주의가 있을 때만 작성"]
-}\nwords는 최대 8개, grammar는 최대 5개, natural은 최대 3개로 제한하라.`;
+}\nwords는 최대 8개, grammar는 최대 5개, natural은 최대 3개로 제한하라. 정확한 일본어 대응어가 애매해도 원문의 의미를 생략하지 말고 쉬운 일본어 바꿔말하기를 제시하라.`;
 
   return `다음 일본어 발화를 한국어 통역 이해 보조용으로 분석하라.\n\n원문: ${text}\n\n다음 JSON 스키마를 정확히 지켜라:\n{
 "translation_ko":"자연스럽고 정확한 한국어 번역",
@@ -1366,6 +1496,10 @@ async function runGeminiAnalysis(text = '', lang = currentLang, force = false) {
   updateGeminiStatus('분석 중…');
   try {
     const result = await geminiFetch(buildGeminiPrompt(targetText, lang), lang === 'ko-KR' ? GEMINI_SYSTEM_KO : GEMINI_SYSTEM_JA);
+    if (currentLang !== lang || currentUtterance?.text !== targetText) {
+      updateGeminiStatus('연결됨');
+      return;
+    }
     renderGeminiResult(result, lang, targetText);
     updateGeminiStatus('연결됨');
     log(`Gemini 분석 완료 (${lang})`);
@@ -1433,6 +1567,13 @@ function searchDictionary(query) {
   for (const item of termsDB) {
     if ((item.keyword || '').includes(q) || (item.meaning || '').toLowerCase().includes(q) || (item.reading || '').includes(q)) {
       hits.push({ja:item.keyword, reading:item.reading, meaning:item.meaning, category:'복지 전문용어', priority:110});
+    }
+  }
+  for (const item of koTranslationPacksDB) {
+    const ko=(item.aliases||[]).join(' ');
+    const cand=(item.candidates||[]).map(x=>x.ja).join(' ');
+    if (ko.toLowerCase().includes(q) || cand.toLowerCase().includes(q)) {
+      (item.candidates||[]).slice(0,3).forEach((c,idx)=>hits.push({ja:c.ja, reading:'', meaning:`${(item.aliases||[])[0] || ''} · ${c.label || '후보'} · ${c.nuance || ''}`, category:`번역팩 · ${item.category || ''}`, priority:(item.priority||100)-idx}));
     }
   }
   const unique=[]; const seen=new Set();
@@ -1763,9 +1904,21 @@ function restartRecognition(delay = 300) {
 }
 
 async function startOrSwitch(lang) {
-  if (currentLang !== lang && currentUtterance && !currentUtterance.committed) {
+  if ('speechSynthesis' in window) speechSynthesis.cancel();
+  if (currentLang !== lang) {
     commitCurrentUtterance();
     currentUtterance = null;
+    lastKoAnalysis = null;
+    lastLocalAssemblyHtml = '';
+    currentDetectedKeywords.clear();
+    currentDetectedGrammar.clear();
+    currentDetectedGeneralWords.clear();
+    translationResultEl.textContent = '일본측 발화를 기다립니다.';
+    translationBadgeEl.textContent = '로컬 대기';
+    translationNoteEl.textContent = '로컬 DB 기반 참고 번역입니다.';
+    localKoJaResultEl.textContent = '한국측 발화를 기다립니다.';
+    koTranslationBadgeEl.textContent = '로컬 대기';
+    for (const panel of [aiJpKoResultEl, aiKoJaResultEl, aiJpHintsEl, aiKoHintsEl]) panel.classList.add('hidden');
     renderCurrentUtterance();
   }
   desiredListening = true;
